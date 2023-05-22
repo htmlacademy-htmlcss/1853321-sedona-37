@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alexei Ishtuganov](https://up.htmlacademy.ru/htmlcss/37/user/1853321).
-* Наставник: `Неизвестно`.
+* Наставник: `Алиса Пепел https://htmlacademy.ru/profile/id615601`.
 
 ---
 
