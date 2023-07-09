@@ -34,7 +34,7 @@ body {
 /****** Index ******/
 
 /* header */
-/* .main-header {} */
+
 
 .navigation-site {
   font-size: 20px;
@@ -51,6 +51,8 @@ body {
   text-transform: capitalize;
   color: #000000;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-list-item button {
@@ -74,7 +76,18 @@ body {
 
 .navigation-user {}
 
-.visually-hidden {}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* main */
 .main-index {}
@@ -210,14 +223,12 @@ body {
 }
 
 /* subscribe */
-.subscribe {
-  background-image: url(../images/);
-  background-color: #82b3d3;
+.subscribe-index {
+  background-image: url(../images/Subscribe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   color: #ffffff;
-
 }
 
 .subscribe-title {
@@ -253,8 +264,194 @@ body {
 
 .social-list-item {}
 
-.button {}
-
-.htmlacademy {}
 
 /****** Catalog ******/
+
+.visually-hidden {}
+
+
+.hostel-sedona {
+  background-image: url(../images/catalog-filter.jpg);
+  background-color: #82b3d3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.main-catalog-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-item {}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+.catalog-form {} */
+
+.catalog-form-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-form-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-form-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-form-list-item {
+  list-style: none;
+}
+
+.button-catalog-submit {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82b3d2;
+  color: #ffffff;
+  border: none;
+}
+
+.button-catalog-reset {
+  background-color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+}
+
+/*
+.control {}
+
+.control-input {}
+
+.catalog-cards {} */
+
+.catalog-cards-found {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* .controller-list {}
+
+.controller-list-item {}
+
+.button {} */
+
+.catalog-cards-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+}
+
+/* .catalog-cards-list-item {}
+
+.catalog-cards-img {} */
+
+.catalog-cards-list-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.catalog-button-more {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.catalog-button-favorites {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  border: none;
+  color: #FFF;
+}
+
+/* .rating {} */
+
+.star p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82b3d3;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-current {}
+
+.subscribe {}
+
+.subscribe-title {}
+
+.subscribe-text {}
+
+.subscribe-form {}
+
+.main-footer {}
+
+.social-list {}
+
+.social-list-item {}
+
+.social-link {}
+
+.htmlacademy {}
