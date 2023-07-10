@@ -21,10 +21,18 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "PT sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .button {
@@ -37,23 +45,35 @@ body {
 
 
 .navigation-site {
+  display: flex;
+  padding-left: 70px;
+  width: 1200px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+
 }
 
-.logo {}
+/* .logo {} */
 
 .navigation-list {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 28px;
+  width: 339px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+}
+
 
 .navigation-list-item button {
   font-size: 16px;
@@ -74,7 +94,6 @@ body {
   text-align: center;
 }
 
-.navigation-user {}
 
 .visually-hidden {
   position: absolute;
@@ -90,7 +109,10 @@ body {
 }
 
 /* main */
-.main-index {}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 /* hero */
 .hero {
@@ -118,6 +140,7 @@ body {
 }
 
 .advantages-subtitle {
+  text-align: center;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -375,7 +398,7 @@ body {
   padding: 0;
   list-style: none;
 }
-}
+
 
 /* .catalog-cards-list-item {}
 
