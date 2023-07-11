@@ -41,6 +41,12 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /****** Index ******/
 
 /* header */
@@ -61,6 +67,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-left: 28px;
   width: 339px;
@@ -89,6 +96,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -412,6 +420,7 @@ body {
 }
 
 .catalog-cards-found {
+  flex-grow: 1;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -419,8 +428,7 @@ body {
 }
 
 .select-control {
-  margin-left: auto;
-  margin-right: 70px;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
