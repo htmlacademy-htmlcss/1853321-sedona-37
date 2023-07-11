@@ -35,7 +35,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog main-container">
       <section class="hostel-sedona">
       <h1 class="main-catalog-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -104,11 +104,14 @@
             <label class="visually-hidden" for="catalog-form-price-to" >Цена за сутки, до</label>
             <input type="number" name="catalog-form-price-to" id="catalog-form-price-to" placeholder="9000" value="9000">
           </fieldset>
-        <button class="button-catalog-submit" type="submit">Применить</button>
-        <button class="button-catalog-reset" type="reset">Сбросить</button>
+        <div class="form-buttons">
+          <button class="button-catalog-submit" type="submit">Применить</button>
+          <button class="button-catalog-reset" type="reset">Сбросить</button>
+        </div>
       </form>
       </section>
       <section class="catalog-cards">
+        <div class="wrapper-catalog-cards">
         <h2 class="visually-hidden">Выбор гостиницы</h2>
         <p class="catalog-cards-found">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
@@ -133,6 +136,7 @@
                     </a>
                 </li>
         </ul>
+        </div>
         <ul class="catalog-cards-list">
           <li class="catalog-cards-list-item">
             <img class="catalog-cards-img" src="images/hotel-1.jpg" width="300" height="212" alt="пейзаж Amara Resort & Spa.">
