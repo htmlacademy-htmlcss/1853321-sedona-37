@@ -466,14 +466,7 @@ address a {
 
 /****** Вторая страница Catalog ******/
 
-.main-catalog {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-
+/* секция hostel-sedona title, breadcrums, catalog form  */
 .hostel-sedona {
   padding: 35px 70px 70px;
   background-image: url(../images/catalog-filter.jpg);
@@ -481,21 +474,30 @@ address a {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  margin-bottom: 56px;
 }
 
-.main-catalog-title {
+f .main-catalog-title {
+  margin: 0;
+  padding-bottom: 8px;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
 }
 
 .breadcrumbs {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.breadcrumbs-item {}
+.breadcrumbs-item {
+  padding-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -504,6 +506,8 @@ address a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Catalog form */
 
 .catalog-form {
   display: flex;
@@ -518,7 +522,17 @@ address a {
   flex-direction: column;
 }
 
+.catalog-form-group:nth-child(2) {
+  margin-right: 139px;
+}
+
+.catalog-form-group:last-child {
+  margin-right: 0;
+}
+
+
 .catalog-form-title {
+  padding-bottom: 32px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -531,10 +545,53 @@ address a {
 }
 
 .catalog-form-list-item {
+  padding-bottom: 16px;
   list-style: none;
 }
 
+.catalog-form-list-item:last-child {
+  padding-bottom: 0;
+}
+
+.wrapper-price-inputs {
+  display: flex;
+}
+
+.input-price {
+  margin-right: 2px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 12px 20px;
+  background-color: #F2F2F2;
+  border: none;
+  width: 143px;
+}
+
+.input-price:last-child {
+  margin-right: 0;
+}
+
+/* Кнопки каталога */
+
+.form-buttons {
+  display: flex;
+  width: 191px;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.form-buttons button {
+  margin-bottom: 32px;
+}
+
+.form-buttons button:last-child {
+  margin-bottom: 0;
+}
+
 .button-catalog-submit {
+  font-family: PT Sans;
+  padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -542,20 +599,23 @@ address a {
   background-color: #82b3d2;
   color: #ffffff;
   border: none;
+  border-radius: 4px;
 }
 
 .button-catalog-reset {
+  font-family: PT Sans;
+  padding: 8px 50px;
   background-color: inherit;
-  font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
+  text-transform: uppercase;
   color: #ffffff;
   border: none;
+  border-radius: 4px;
+
 }
 
-
-.control {}
-
-.control-input {}
+/* Карточки каталога */
 
 .catalog-cards {
   width: 1060px;
@@ -564,10 +624,14 @@ address a {
 
 .wrapper-catalog-cards {
   display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  margin: 0;
 }
 
-.catalog-cards-found {
-  flex-grow: 1;
+.catalog-cards-top {
+  margin: 0;
+  margin-right: 200px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -575,9 +639,12 @@ address a {
 }
 
 .select-control {
-
+  width: 292px;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  margin-right: 70px;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
 }
@@ -586,9 +653,7 @@ address a {
   display: flex;
 }
 
-.controller-list-item {}
-
-
+/* Карточки сделаю позже гридами */
 .catalog-cards-list {
   list-style: none;
   display: grid;
@@ -599,10 +664,6 @@ address a {
   margin-bottom: 80px;
 }
 
-
-/* .catalog-cards-list-item {}
-
-.catalog-cards-img {} */
 
 .catalog-cards-list-title {
   font-size: 24px;
@@ -650,16 +711,38 @@ address a {
 
 }
 
-/* .pagination-item {} */
+/* Пагинация */
+
+
+.pagination-item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 12px 12px;
+  text-align: center;
+  background-color: #82B3D3;
+  cursor: pointer;
+}
+
+.pagination-item:first-child {
+  background-color: #F2F2F2;
+}
+
+.pagination-item:nth-child(5) {
+  background-color: #fff;
+}
 
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  background-color: #82b3d3;
-  color: #ffffff;
   text-decoration: none;
+  color: #FFF;
+}
+
+.pagination-current .pagination-link {
+  color: #000000;
 }
 
 /* .pagination-current {}
