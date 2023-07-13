@@ -362,7 +362,6 @@ img {
 /* блок с subscribe */
 
 .subscribe {
-  width: 100%;
   display: flex;
   padding: 96px 258px 104px 258px;
   flex-direction: column;
@@ -399,6 +398,7 @@ img {
 
 .subscribe-form {
   display: flex;
+  width: 100%;
 }
 
 .subscribe-form input {
