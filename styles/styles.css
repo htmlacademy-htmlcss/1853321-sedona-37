@@ -365,13 +365,14 @@ img {
   padding: 96px 258px 104px 258px;
   flex-direction: column;
   align-items: center;
+  text-align: center
 }
 
 .subscribe-background-image {
   background-image: url(../images/Subscribe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  ;
   color: #ffffff;
 }
 
@@ -422,6 +423,10 @@ img {
   padding: 5px 80px;
   border: 0;
   border-radius: 0 4px 4px 0;
+}
+
+.input-catalog-subcribe {
+  background-color: #F2F2F2;
 }
 
 /* основной футер */
@@ -665,13 +670,39 @@ f .main-catalog-title {
 }
 
 
+
+.catalog-cards-list-item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px;
+  gap: 16px 20px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+}
+
+.catalog-cards-img {
+  display: block;
+  grid-column: 1 / -1;
+}
+
 .catalog-cards-list-title {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  grid-column: 1 / -1;
+}
+
+.cards-hostel-price {
+  justify-self: end;
 }
 
 .catalog-button-more {
+  font-family: "PT Sans", sans-serif;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 19px;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -680,9 +711,14 @@ f .main-catalog-title {
   color: #fff;
   background-color: #756157;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .catalog-button-favorites {
+  font-family: "PT Sans", sans-serif;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 18px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -690,18 +726,21 @@ f .main-catalog-title {
   background-color: #82B3D3;
   border: none;
   color: #FFF;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-/* .rating {} */
-
-.star p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
+.catalog-button-favorites--selected {
+  background-color: #7DB54F;
 }
 
+.cards-rating {
+  text-align: center;
+  padding: 9px 20px;
+  background-color: #f2f2f2;
+}
+
+/* Пагинация */
 .pagination {
   display: flex;
   gap: 8px;
@@ -710,9 +749,6 @@ f .main-catalog-title {
   padding: 0;
 
 }
-
-/* Пагинация */
-
 
 .pagination-item {
   display: inline-block;
@@ -738,29 +774,9 @@ f .main-catalog-title {
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .pagination-current .pagination-link {
   color: #000000;
 }
-
-/* .pagination-current {}
-
-.subscribe {}
-
-.subscribe-title {}
-
-.subscribe-text {}
-
-.subscribe-form {}
-
-.main-footer {}
-
-.social-list {}
-
-.social-list-item {}
-
-.social-link {}
-
-.htmlacademy {} */
