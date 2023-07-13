@@ -782,3 +782,7 @@ address a {
 .pagination-current .pagination-link {
   color: #000;
 }
+
+.pagination-link--more {
+  color: #000;
+}
