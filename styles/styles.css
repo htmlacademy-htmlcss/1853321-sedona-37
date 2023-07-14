@@ -45,12 +45,17 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 img {
   font-size: 0;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  border: none;
 }
 
 /****** Первая страница Index ******/
@@ -110,10 +115,42 @@ img {
 
 }
 
+.navigation-user .navigation-list-item:nth-child(1) .navigation-link {
+  background-image: url(../images/icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.navigation-user .navigation-list-item:nth-child(2) .navigation-link {
+  background-image: url(../images/icon/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.navigation-list-item {
+  position: relative;
+}
+
+.add-number {
+  position: absolute;
+  color: #ffffff;
+  background-color: #7DB54F;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  border-radius: 50%;
+  top: 0px;
+  left: 15px;
+}
+
 /* Кнопка навигации */
 
 .button-action {
   font-family: PT Sans;
+  margin-left: 20px;
   display: inline-block;
   color: #FFFFFF;
   width: 165px;
@@ -131,6 +168,10 @@ img {
 
 .navigation-link--current {
   text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 19px;
+  text-underline-position: under;
 }
 
 /* Скрытие элементов */
@@ -289,6 +330,7 @@ img {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -369,10 +411,9 @@ img {
 }
 
 .subscribe-background-image {
-  background-image: url(../images/Subscribe.jpg);
+  background-image: url(../images/subscribe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  ;
   color: #ffffff;
 }
 
@@ -397,6 +438,7 @@ img {
 
 .subscribe-form {
   display: flex;
+  width: 100%;
 }
 
 .subscribe-form input {
@@ -411,6 +453,7 @@ img {
 }
 
 
+
 .subscribe-form button {
   font-family: PT Sans;
   font-size: 20px;
@@ -421,7 +464,6 @@ img {
   background-color: #82B3D3;
   color: #FFF;
   padding: 5px 80px;
-  border: 0;
   border-radius: 0 4px 4px 0;
 }
 
@@ -482,7 +524,7 @@ address a {
   margin-bottom: 56px;
 }
 
-f .main-catalog-title {
+.main-catalog-title {
   margin: 0;
   padding-bottom: 8px;
   font-size: 60px;
@@ -777,6 +819,7 @@ f .main-catalog-title {
   color: #FFFFFF;
 }
 
-.pagination-current .pagination-link {
-  color: #000000;
+.pagination-current .pagination-link,
+.pagination-link .pagination-link--more {
+  color: #000;
 }
