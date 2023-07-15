@@ -910,6 +910,7 @@ address a:active {
 .wrapper-catalog-cards {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-bottom: 40px;
   margin: 0;
 }
@@ -926,9 +927,9 @@ address a:active {
 .select-control {
   width: 292px;
   padding: 14px 20px;
+  margin-right: auto;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: auto;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -937,6 +938,8 @@ address a:active {
 .controller-list {
   display: flex;
   list-style-type: none;
+  padding: 0;
+  justify-self: end;
 }
 
 .card-toggle {
@@ -963,6 +966,7 @@ address a:active {
   border-radius: 4px;
   outline: 2px solid #000;
 }
+
 
 .controller-list-item {
   border-radius: 4px;
