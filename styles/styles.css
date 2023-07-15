@@ -688,6 +688,12 @@ address a:active {
 
 .catalog-form {
   display: flex;
+
+}
+
+.control:focus-within {
+  outline: 2px solid #000;
+  border-radius: 4px;
 }
 
 .catalog-form-group {
@@ -735,10 +741,6 @@ address a:active {
   padding-left: 36px;
 }
 
-/* .control-label:hover {
-  opacity: 0.6000000238418579;
-} */
-
 
 .control-label:focus {
   outline: 2px solid #68A2CA;
@@ -783,23 +785,24 @@ address a:active {
   content: "";
   position: absolute;
   top: 5px;
-  left: 4px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 12px;
   height: 10px;
   background-image: url(../images/icon/control-checkbox.svg);
   background-repeat: no-repeat;
   background-position: center;
-
 }
+
 
 
 .control-input[type="radio"]:checked + .control-mark::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
   background-color: #3F5E72;
   border-radius: 50%;
 }
@@ -845,6 +848,7 @@ address a:active {
 .form-buttons {
   display: flex;
   width: 191px;
+  padding-top: 56px;
   flex-direction: column;
   justify-content: end;
 }
