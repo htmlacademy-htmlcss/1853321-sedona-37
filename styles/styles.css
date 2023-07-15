@@ -444,7 +444,8 @@ button {
 .search .button {
   display: inline-block;
   font-weight: 700;
-  padding: 8px 50px;
+  width: 376px;
+  padding: 8px 29px;
   font-size: 20px;
   line-height: 36px;
   background-color: #756157;
@@ -510,6 +511,7 @@ button {
 
 .subscribe-form button {
   font-family: PT Sans;
+  width: 232px;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -517,7 +519,6 @@ button {
   text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFF;
-  padding: 5px 80px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -729,24 +730,115 @@ address a:active {
   padding-bottom: 0;
 }
 
+.control {
+  position: relative;
+  padding-left: 36px;
+}
+
+/* .control-label:hover {
+  opacity: 0.6000000238418579;
+} */
+
+
+.control-label:focus {
+  outline: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+
+
+.control:hover .control-mark,
+.control-label:hover {
+  opacity: 0.6000000238418579;
+}
+
+.control:focus .control-mark,
+.control-label:focus {
+  outline: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+
+.control:active .control-mark,
+.control-label:active {
+  opacity: 0.30000001192092896;
+}
+
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/icon/control-checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+}
+
 .wrapper-price-inputs {
   display: flex;
 }
 
 .input-price {
   margin-right: 2px;
+  width: 143px;
+  padding: 12px 20px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 12px 20px;
   background-color: #F2F2F2;
-  border: none;
-  width: 143px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .input-price:last-child {
   margin-right: 0;
+  border-radius: 0 4px 4px 0;
 }
+
+.input-price:hover {
+  background-color: #E6E6E6;
+}
+
+.input-price:focus {
+  outline: 4px solid #83B3D3;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-price:focus:last-child {
+  outline: 4px solid #83B3D3;
+  border-radius: 0 4px 4px 0;
+}
+
 
 /* Кнопки каталога */
 
@@ -964,8 +1056,9 @@ address a:active {
 
 .cards-rating {
   text-align: center;
-  padding: 9px 20px;
+  padding: 9px 16px;
   background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 /* Пагинация */
@@ -1014,6 +1107,11 @@ address a:active {
 
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.30);
+}
+
+.pagination-item:first-child:hover {
+  background-color: #F2F2F2;
+  outline: none;
 }
 
 .pagination-current .pagination-link,
