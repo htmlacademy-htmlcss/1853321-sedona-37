@@ -306,10 +306,13 @@ button {
   width: 60px;
   height: 2px;
   margin: 30px auto;
-  background-color: #ffffff;
+  background-color: #000;
 
 }
 
+.advantages-item-images .advantages-item-title::after {
+  background-color: white;
+}
 
 .advantages-item-subtitle {
   margin: 0;
@@ -576,9 +579,21 @@ address a:active {
 }
 
 .social-list-item {
-  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+
+}
+
+.social-link {
+  display: block;
   width: 47px;
   height: 40px;
+  text-align: center;
+  padding-top: 13px;
+}
+
+.social-link svg {
+  align-items: center;
 }
 
 .social-link:hover path,
