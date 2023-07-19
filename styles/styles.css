@@ -887,6 +887,7 @@ address a:active {
 }
 
 .input-price {
+  font: "Pt Sans", sans-serif;
   margin-right: 2px;
   width: 143px;
   padding: 12px 20px;
@@ -939,8 +940,6 @@ address a:active {
   outline: 4px solid #83B3D3;
   border-radius: 0 4px 4px 0;
 }
-
-.input-price:focus:last-child {}
 
 
 .input-price::-webkit-outer-spin-button,
@@ -1035,6 +1034,7 @@ address a:active {
 }
 
 .select-control {
+  font: "Pt Sans", sans-serif;
   width: 292px;
   padding: 14px 20px;
   margin-right: auto;
@@ -1345,6 +1345,7 @@ address a:active {
 }
 
 .modal-date-input {
+  font: "Pt Sans", sans-serif;
   width: 100%;
   padding: 12px 60px 12px 20px;
   font-weight: 700;
@@ -1514,6 +1515,7 @@ address a:active {
 }
 
 .clients-input {
+  font: "Pt Sans", sans-serif;
   width: 40px;
   text-align: center;
   font-size: 18px;
