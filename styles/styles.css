@@ -54,7 +54,7 @@ img {
   font-size: 0;
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .button {
@@ -696,7 +696,7 @@ address a:active {
   height: 11px;
   right: -20px;
   bottom: 5px;
-  background-image: url(../images/icon/arrow.svg);
+  background-image: url(../images/icon/breadcrumbs-arrow.svg);
   background-repeat: no-repeat;
 }
 
