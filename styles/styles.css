@@ -56,6 +56,7 @@ img {
 }
 
 .button {
+  font-family: "Pt Sans", sans-serif;
   border: none;
 }
 
@@ -162,7 +163,7 @@ img {
 /* Кнопка навигации */
 
 .button-action {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   margin-left: 20px;
   display: inline-block;
   color: #FFFFFF;
@@ -453,6 +454,7 @@ img {
 }
 
 .search .button {
+  font: "Pt Sans", sans-serif;
   display: inline-block;
   font-weight: 700;
   width: 376px;
@@ -509,11 +511,11 @@ img {
 }
 
 .subscribe-form input {
+  font: "Pt Sans", sans-serif;
   width: 452px;
   padding: 12px 20px;
   border: 0;
   border-radius: 4px 0 0 4px;
-  font-family: PT Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -523,7 +525,7 @@ img {
 
 
 .subscribe-form button {
-  font-family: PT Sans;
+  font: "Pt Sans", sans-serif;
   width: 232px;
   font-size: 20px;
   font-style: normal;
@@ -949,6 +951,7 @@ address a:active {
 /* Кнопки каталога */
 
 .form-buttons {
+  font: "Pt Sans" sans-serif;
   display: flex;
   width: 191px;
   padding-top: 56px;
@@ -965,7 +968,7 @@ address a:active {
 }
 
 .button-catalog-submit {
-  font-family: PT Sans;
+  font: "Pt Sans" sans-serif;
   padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
@@ -979,7 +982,7 @@ address a:active {
 }
 
 .button-catalog-reset {
-  font-family: PT Sans;
+  font: "Pt Sans", sans-serif;
   padding: 8px 50px;
   background-color: inherit;
   font-weight: 700;
@@ -1480,6 +1483,7 @@ address a:active {
 }
 
 .clients-button {
+  font: "Pt Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
