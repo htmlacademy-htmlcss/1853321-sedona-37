@@ -670,8 +670,6 @@ address a:active {
   position: relative;
 }
 
-
-
 .breadcrumbs-link {
   font-size: 16px;
   font-weight: 400;
@@ -681,14 +679,10 @@ address a:active {
   cursor: pointer;
 }
 
-.breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.60);
-}
-
+.breadcrumbs-link:hover,
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.30);
+  opacity: 0.6;
 }
-
 
 .breadcrumbs-item:not(:last-child):after {
   content: "";
@@ -793,7 +787,10 @@ address a:active {
   border-radius: 4px;
 }
 
-
+.range-toggle:hover {
+  background-color: rgb(131, 179, 211);
+  outline: 3px solid #fff;
+}
 
 .toggle-min {
   top: -8px;
