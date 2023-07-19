@@ -883,6 +883,7 @@ address a:active {
 .wrapper-price-inputs {
   display: flex;
   margin-bottom: 48px;
+  position: relative;
 }
 
 .input-price {
@@ -898,15 +899,32 @@ address a:active {
   cursor: pointer;
 }
 
-.input-price::-webkit-outer-spin-button,
-.input-price::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
 
-.input-price:last-child {
-  margin-right: 0;
+.input-price--right {
   border-radius: 0 4px 4px 0;
 }
+
+.input-placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+
+
+.input-placeholder--before {
+  right: 160px;
+}
+
+.input-placeholder--afer {
+  right: 20px;
+}
+
 
 .input-price:hover {
   background-color: #E6E6E6;
@@ -917,11 +935,18 @@ address a:active {
   border-radius: 4px 0 0 4px;
 }
 
-.input-price:focus:last-child {
+.input-price--right:focus {
   outline: 4px solid #83B3D3;
   border-radius: 0 4px 4px 0;
 }
 
+.input-price:focus:last-child {}
+
+
+.input-price::-webkit-outer-spin-button,
+.input-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 /* Кнопки каталога */
 
