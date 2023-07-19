@@ -55,12 +55,16 @@ img {
   height: auto;
 }
 
-button {
+.button {
+  font-family: "Pt Sans", sans-serif;
   border: none;
 }
 
 
-
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 /****** Первая страница Index ******/
 
@@ -159,7 +163,7 @@ button {
 /* Кнопка навигации */
 
 .button-action {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   margin-left: 20px;
   display: inline-block;
   color: #FFFFFF;
@@ -450,6 +454,7 @@ button {
 }
 
 .search .button {
+  font: "Pt Sans", sans-serif;
   display: inline-block;
   font-weight: 700;
   width: 376px;
@@ -470,7 +475,7 @@ button {
   padding: 96px 258px 104px 258px;
   flex-direction: column;
   align-items: center;
-  text-align: center
+  text-align: center;
 }
 
 .subscribe-background-image {
@@ -478,6 +483,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .subscribe-title {
@@ -505,11 +511,11 @@ button {
 }
 
 .subscribe-form input {
+  font: "Pt Sans", sans-serif;
   width: 452px;
   padding: 12px 20px;
   border: 0;
   border-radius: 4px 0 0 4px;
-  font-family: PT Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -519,7 +525,7 @@ button {
 
 
 .subscribe-form button {
-  font-family: PT Sans;
+  font: "Pt Sans", sans-serif;
   width: 232px;
   font-size: 20px;
   font-style: normal;
@@ -667,8 +673,6 @@ address a:active {
   position: relative;
 }
 
-
-
 .breadcrumbs-link {
   font-size: 16px;
   font-weight: 400;
@@ -678,14 +682,10 @@ address a:active {
   cursor: pointer;
 }
 
-.breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.60);
-}
-
+.breadcrumbs-link:hover,
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.30);
+  opacity: 0.6;
 }
-
 
 .breadcrumbs-item:not(:last-child):after {
   content: "";
@@ -778,7 +778,7 @@ address a:active {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
-
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -790,7 +790,10 @@ address a:active {
   border-radius: 4px;
 }
 
-
+.range-toggle:hover {
+  background-color: rgb(131, 179, 211);
+  outline: 3px solid #fff;
+}
 
 .toggle-min {
   top: -8px;
@@ -880,9 +883,11 @@ address a:active {
 .wrapper-price-inputs {
   display: flex;
   margin-bottom: 48px;
+  position: relative;
 }
 
 .input-price {
+  font: "Pt Sans", sans-serif;
   margin-right: 2px;
   width: 143px;
   padding: 12px 20px;
@@ -895,10 +900,32 @@ address a:active {
   cursor: pointer;
 }
 
-.input-price:last-child {
-  margin-right: 0;
+
+.input-price--right {
   border-radius: 0 4px 4px 0;
 }
+
+.input-placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+
+
+.input-placeholder--before {
+  right: 160px;
+}
+
+.input-placeholder--afer {
+  right: 20px;
+}
+
 
 .input-price:hover {
   background-color: #E6E6E6;
@@ -909,15 +936,21 @@ address a:active {
   border-radius: 4px 0 0 4px;
 }
 
-.input-price:focus:last-child {
+.input-price--right:focus {
   outline: 4px solid #83B3D3;
   border-radius: 0 4px 4px 0;
 }
 
 
+.input-price::-webkit-outer-spin-button,
+.input-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 /* Кнопки каталога */
 
 .form-buttons {
+  font: "Pt Sans" sans-serif;
   display: flex;
   width: 191px;
   padding-top: 56px;
@@ -934,7 +967,7 @@ address a:active {
 }
 
 .button-catalog-submit {
-  font-family: PT Sans;
+  font: "Pt Sans" sans-serif;
   padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
@@ -948,7 +981,7 @@ address a:active {
 }
 
 .button-catalog-reset {
-  font-family: PT Sans;
+  font: "Pt Sans", sans-serif;
   padding: 8px 50px;
   background-color: inherit;
   font-weight: 700;
@@ -1001,6 +1034,7 @@ address a:active {
 }
 
 .select-control {
+  font: "Pt Sans", sans-serif;
   width: 292px;
   padding: 14px 20px;
   margin-right: auto;
@@ -1066,7 +1100,7 @@ address a:active {
   border-color: #000;
 }
 
-/* Карточки сделаю позже гридами */
+/* Карточки */
 .catalog-cards-list {
   list-style: none;
   display: grid;
@@ -1147,9 +1181,30 @@ address a:active {
   padding: 9px 16px;
   background-color: #f2f2f2;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
-/* Пагинация */
+.catalog-card-stars {
+  margin: 0;
+  margin-top: 10px;
+  background-image: url("../images/icon/star.svg");
+  background-repeat: space no-repeat;
+}
+
+.catalog-stars-4 {
+  width: 88px;
+}
+
+.catalog-stars-3 {
+  width: 65px;
+}
+
+.catalog-stars-2 {
+  width: 42px;
+}
+
+
+/* ПагинацияЯ */
 .pagination {
   display: flex;
   gap: 8px;
@@ -1311,13 +1366,17 @@ address a:active {
 }
 
 .modal-date-input {
+  font: "Pt Sans", sans-serif;
   width: 100%;
   padding: 12px 60px 12px 20px;
   font-weight: 700;
   background-image: url("../images/icon/calendar.svg");
   background-repeat: no-repeat;
   background-position: center right 22px;
+  -webkit-appearance: none;
+  appearance: none;
 }
+
 
 .modal-massage {
   margin: 0;
@@ -1446,6 +1505,7 @@ address a:active {
 }
 
 .clients-button {
+  font: "Pt Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1476,6 +1536,7 @@ address a:active {
 }
 
 .clients-input {
+  font: "Pt Sans", sans-serif;
   width: 40px;
   text-align: center;
   font-size: 18px;
@@ -1484,8 +1545,13 @@ address a:active {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  -moz-appearance: none;
 }
 
+.clients-input::-webkit-outer-spin-button,
+.clients-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 .input-text {
   padding: 14px 20px;
