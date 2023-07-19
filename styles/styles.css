@@ -1204,7 +1204,7 @@ address a:active {
 }
 
 
-/* ПагинацияЯ */
+/* Пагинация*/
 .pagination {
   display: flex;
   gap: 8px;
