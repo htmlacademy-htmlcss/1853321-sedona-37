@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -36,7 +38,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-
 }
 
 .page-container {
@@ -53,6 +54,7 @@ img {
   font-size: 0;
   max-width: 100%;
   height: auto;
+  /* object-fit: contain; */
 }
 
 .button {
@@ -127,7 +129,7 @@ img {
   opacity: 70%;
 }
 
-.navigation-user .navigation-list-item:nth-child(1) .navigation-link {
+.link-search {
   background-image: url(../images/icon/search.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -135,7 +137,7 @@ img {
 
 }
 
-.navigation-user .navigation-list-item:nth-child(2) .navigation-link {
+.link-like {
   background-image: url(../images/icon/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -454,7 +456,7 @@ img {
 }
 
 .search .button {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   display: inline-block;
   font-weight: 700;
   width: 376px;
@@ -511,7 +513,7 @@ img {
 }
 
 .subscribe-form input {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   width: 452px;
   padding: 12px 20px;
   border: 0;
@@ -525,7 +527,7 @@ img {
 
 
 .subscribe-form button {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   width: 232px;
   font-size: 20px;
   font-style: normal;
@@ -694,7 +696,7 @@ address a:active {
   height: 11px;
   right: -20px;
   bottom: 5px;
-  background-image: url(../images/icon/arrow.svg);
+  background-image: url(../images/icon/breadcrumbs-arrow.svg);
   background-repeat: no-repeat;
 }
 
@@ -887,7 +889,7 @@ address a:active {
 }
 
 .input-price {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   margin-right: 2px;
   width: 143px;
   padding: 12px 20px;
@@ -981,7 +983,7 @@ address a:active {
 }
 
 .button-catalog-reset {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   padding: 8px 50px;
   background-color: inherit;
   font-weight: 700;
@@ -1034,9 +1036,13 @@ address a:active {
 }
 
 .select-control {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
+  appearance: none;
   width: 292px;
   padding: 14px 20px;
+  background-image: url("../images/icon/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
   margin-right: auto;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1177,6 +1183,7 @@ address a:active {
 }
 
 .cards-rating {
+  font-size: 16px;
   text-align: center;
   padding: 9px 16px;
   background-color: #f2f2f2;
@@ -1366,7 +1373,7 @@ address a:active {
 }
 
 .modal-date-input {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   width: 100%;
   padding: 12px 60px 12px 20px;
   font-weight: 700;
@@ -1505,7 +1512,7 @@ address a:active {
 }
 
 .clients-button {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1536,7 +1543,7 @@ address a:active {
 }
 
 .clients-input {
-  font: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", sans-serif;
   width: 40px;
   text-align: center;
   font-size: 18px;
