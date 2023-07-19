@@ -60,7 +60,10 @@ button {
 }
 
 
-
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 /****** Первая страница Index ******/
 
@@ -895,6 +898,11 @@ address a:active {
   cursor: pointer;
 }
 
+.input-price::-webkit-outer-spin-button,
+.input-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .input-price:last-child {
   margin-right: 0;
   border-radius: 0 4px 4px 0;
@@ -1317,7 +1325,10 @@ address a:active {
   background-image: url("../images/icon/calendar.svg");
   background-repeat: no-repeat;
   background-position: center right 22px;
+  -webkit-appearance: none;
+  appearance: none;
 }
+
 
 .modal-massage {
   margin: 0;
@@ -1484,8 +1495,13 @@ address a:active {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  -moz-appearance: none;
 }
 
+.clients-input::-webkit-outer-spin-button,
+.clients-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 .input-text {
   padding: 14px 20px;
