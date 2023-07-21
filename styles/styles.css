@@ -976,6 +976,7 @@ address a:active {
   padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   background-color: #82b3d2;
@@ -987,6 +988,7 @@ address a:active {
 
 .button-catalog-reset {
   font-family: "Pt Sans", sans-serif;
+  font-size: 16px;
   width: 192px;
   padding: 8px 50px;
   background-color: inherit;
