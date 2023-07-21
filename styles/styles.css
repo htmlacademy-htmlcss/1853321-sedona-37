@@ -61,6 +61,13 @@ img {
   border: none;
 }
 
+button[disabled],
+button[disabled]:hover,
+button[disabled]:active,
+button[disabled]:focus {
+  color: #fff;
+  background-color: #E5E5E5;
+}
 
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
@@ -125,7 +132,7 @@ img {
 }
 
 .navigation-link:hover {
-  opacity: 70%;
+  opacity: 0.6;
 }
 
 .link-search {
@@ -180,6 +187,17 @@ img {
   border-color: #756157;
 }
 
+.button-action:hover,
+.button-action:focus {
+  opacity: 100%;
+  background-color: #615048;
+}
+
+.button-action:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #756157;
+}
+
 
 
 .navigation-link--current {
@@ -190,14 +208,6 @@ img {
   text-underline-position: under;
 }
 
-.button:hover {
-  opacity: 75%;
-  cursor: pointer;
-}
-
-.button:active {
-  color: rgba(255, 255, 255, 0.30);
-}
 
 /* Скрытие элементов */
 
@@ -454,8 +464,7 @@ img {
   line-height: 26px;
 }
 
-.search .button {
-  font-family: "Pt Sans", sans-serif;
+.button-search {
   display: inline-block;
   font-weight: 700;
   width: 376px;
@@ -467,6 +476,17 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: #615048;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #756157;
 }
 
 /* блок с subscribe */
@@ -525,8 +545,7 @@ img {
 
 
 
-.subscribe-form button {
-  font-family: "Pt Sans", sans-serif;
+.button-subscribe {
   width: 232px;
   font-size: 20px;
   font-style: normal;
@@ -536,6 +555,17 @@ img {
   background-color: #82B3D3;
   color: #FFF;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #82B3D3;
 }
 
 .input-catalog-subcribe {
@@ -714,7 +744,7 @@ address a:active {
 }
 
 .control:focus-within {
-  outline: 2px solid #000;
+  outline: 2px solid #68A2CA;
   border-radius: 4px;
 }
 
@@ -826,7 +856,7 @@ address a:active {
 
 .control-mark {
   position: absolute;
-  top: 3px;
+  top: 0;
   left: 0;
   width: 20px;
   height: 20px;
