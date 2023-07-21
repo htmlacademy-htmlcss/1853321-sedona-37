@@ -750,6 +750,7 @@ address a:active {
 }
 
 .catalog-form-list-item {
+  width: 150px;
   padding-bottom: 16px;
   list-style: none;
 }
@@ -809,6 +810,8 @@ address a:active {
 
 
 .control {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-left: 36px;
   cursor: pointer;
@@ -951,12 +954,13 @@ address a:active {
 /* Кнопки каталога */
 
 .form-buttons {
-  font: "Pt Sans" sans-serif;
   display: flex;
   width: 191px;
-  padding-top: 56px;
   flex-direction: column;
-  justify-content: end;
+}
+
+.wrapper-buttons {
+  margin-top: 56px;
 }
 
 .form-buttons button {
@@ -968,7 +972,7 @@ address a:active {
 }
 
 .button-catalog-submit {
-  font: "Pt Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
@@ -983,6 +987,7 @@ address a:active {
 
 .button-catalog-reset {
   font-family: "Pt Sans", sans-serif;
+  width: 192px;
   padding: 8px 50px;
   background-color: inherit;
   font-weight: 700;
@@ -991,7 +996,6 @@ address a:active {
   color: #ffffff;
   border: none;
   border-radius: 4px;
-
   cursor: pointer;
 }
 
@@ -1126,6 +1130,14 @@ address a:active {
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
+}
+
+.catalog-wrapper-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin-top: auto;
+  row-gap: 16px;
+  column-gap: 20px;
 }
 
 .catalog-cards-img {
