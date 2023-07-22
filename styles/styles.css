@@ -188,7 +188,7 @@ a[disabled]:active {
   margin-left: 20px;
   display: inline-block;
   color: #FFFFFF;
-  width: 165px;
+  width: 160px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -249,6 +249,7 @@ a[disabled]:active {
   background-position: cover;
   text-align: center;
   position: relative;
+  margin-bottom: 69px;
 }
 
 .hero::before {
@@ -270,18 +271,21 @@ a[disabled]:active {
 
 /* блок с advantages */
 
+
 .advantages-title {
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   width: 640px;
   text-align: center;
-
+  margin-bottom: 25px;
 }
 
 
 .advantages-subtitle {
+  margin: 0;
   min-width: 651px;
   font-size: 22px;
   font-weight: 400;
@@ -293,7 +297,7 @@ a[disabled]:active {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 64px 0;
+  margin-bottom: 89px;
 }
 
 .advantages-list {
@@ -320,7 +324,10 @@ a[disabled]:active {
   flex-direction: column;
   justify-content: space-between;
   padding: 103px 85px;
+}
 
+.advantages-item--center {
+  padding: 112px 85px;
 }
 
 .advantages-item-title {
@@ -383,7 +390,7 @@ a[disabled]:active {
 
 
 .services-title {
-  padding-top: 64px;
+  padding-top: 62px;
   padding-bottom: 20px;
   margin: 0;
   width: 505px;
@@ -443,16 +450,15 @@ a[disabled]:active {
 
 .services-list-title {
   padding-top: 102px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   margin: 0;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 36px;
   text-transform: uppercase;
   color: black;
 }
 
 .services-list-subtext {
-  width: 230px;
   margin: 0;
   font-size: 18px;
   line-height: 21px;
@@ -526,7 +532,7 @@ a[disabled]:active {
 
 .subscribe-title {
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -535,7 +541,7 @@ a[disabled]:active {
 .subscribe-text {
   width: 467px;
   margin: 0;
-  padding-bottom: 54px;
+  margin-bottom: 56px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -551,7 +557,7 @@ a[disabled]:active {
 .subscribe-form input {
   font-family: "Pt Sans", sans-serif;
   width: 452px;
-  padding: 12px 20px;
+  padding: 13px 20px;
   border: 0;
   border-radius: 4px 0 0 4px;
   font-size: 18px;
@@ -593,11 +599,13 @@ a[disabled]:active {
 
 .main-footer {
   min-height: 120px;
-  padding: 40px 70px 30px;
+  padding: 44px 70px 30px;
 }
 
-address a {
-  display: flex;
+.phone {
+  display: block;
+  margin-top: 2px;
+  margin-right: 14px;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -607,16 +615,16 @@ address a {
   color: inherit;
 }
 
-address a:hover {
+.phone:hover {
   color: #756157;
 }
 
 
-address a:focus {
+.phone:focus {
   color: #756157;
 }
 
-address a:active {
+.phone:active {
   color: rgba(117, 97, 87, 0.30);
 }
 
@@ -649,7 +657,7 @@ address a:active {
   width: 47px;
   height: 40px;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 12px;
 }
 
 .social-link svg {
@@ -668,6 +676,11 @@ address a:active {
 .wrapper-phone {
   width: 331px;
   align-items: center;
+}
+
+.html-academy-link {
+  display: block;
+  margin-top: 3px;
 }
 
 .html-academy-link:hover path,
