@@ -38,7 +38,7 @@
               <span class="add-number">12</span>
             </li>
             <li class="navigation-list-item">
-              <button type="button" class="navigation-link button-action">Хочу сюда!</button>
+              <button class="button navigation-link button-action" type="button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -62,15 +62,15 @@
                 </div>
                 <img class="advantages-img" src="images/advantages-1-photo.jpg" alt="Городок седона." width="800" height="385">
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item advantages-item--center">
                 <h3 class="advantages-item-title">Небольшая площадь</h3>
                 <p class="advantages-item-subtitle">Все достопримечательности находятся очень близко</p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item advantages-item--center">
                 <h3 class="advantages-item-title">Красивая<br>дорога</h3>
                 <p class="advantages-item-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item advantages-item--center">
                 <h3 class="advantages-item-title">Мало<br>туристов</h3>
                 <p class="advantages-item-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
@@ -91,15 +91,15 @@
             <ul class="services-list">
               <li class="services-list-item">
                 <h3 class="services-list-title">Жильё</h3>
-                <p class="services-list-subtext">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="services-list-subtext">Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
               </li>
               <li class="services-list-item">
                 <h3 class="services-list-title">Еда</h3>
-                <p class="services-list-subtext">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="services-list-subtext">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="services-list-item">
                 <h3 class="services-list-title">Сувениры</h3>
-                <p class="services-list-subtext">Не только китайского, но и настоящего местного производства!</p>
+                <p class="services-list-subtext">Не только китайского,<br> но и настоящего местного производства!</p>
               </li>
 
             </ul>
@@ -107,15 +107,15 @@
           <section class="search">
             <h2 class="search-title">Заинтересовались?</h2>
             <p class="search-subtext">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="button" type="submit">Поиск гостиницы в седоне</button>
+            <button class="button button-search" type="button">Поиск гостиницы в седоне</button>
           </section>
           <section class="subscribe subscribe-background-image">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscribe-form" action="#" method="post">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="subscribe-form-email">Ваша электронная почта</label>
               <input type="text" name="subscribe-form-email" id="subscribe-form-email" placeholder="Ваш e-mail" required>
-              <button class="button" type="submit">Подписаться</button>
+              <button class="button button-subscribe" type="submit">Подписаться</button>
             </form>
           </section>
         </main>
@@ -148,7 +148,7 @@
               </li>
             </ul>
               <address>
-                <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </address>
               <a class="html-academy-link" href="https://htmlacademy.ru/" target="_blank">
                 <svg  width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
@@ -167,30 +167,32 @@
                   </svg>
                 <span class="visually-hidden">Школа веб-разработки.</span>
               </a>
-            </div>
+          </div>
         </footer>
       </div>
       <div class="modal-container modal-container-close">
       <div class="modal modal-search ">
         <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть окно.</span>
-          <span class="modal-close-icon"></span>
+          <svg class="modal-close-cross" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.3928 1.29231L13.1005 0L7.39282 5.70769L1.68513 0L0.392822 1.29231L6.10051 7L0.392822 12.7077L1.68513 14L7.39282 8.29231L13.1005 14L14.3928 12.7077L8.68513 7L14.3928 1.29231Z" fill="black"/>
+            </svg>
         </button>
         <h2 class="modal-search-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-search-form" action="https://echo.htmlacademy.ru/courses" method="get">
           <div class="modal-date-container">
-            <label class="modal-label" for="modal-arrival-date">Дата заезда:</label>
             <div class="modal-wrapper">
+              <label class="modal-label" for="modal-arrival-date">Дата заезда:</label>
               <input class="input-text modal-date-input" name="arrival-date" id="modal-arrival-date" type="text"
                 placeholder="Укажите дату" value="27 апреля 2020" required>
+              </div>
               <p class="modal-massage modal-massage-error">Мы не можем отправить вас в прошлое.</p>
-            </div>
-            <label class="modal-label" for="modal-departure-date">Дата выезда:</label>
             <div class="modal-wrapper">
+              <label class="modal-label" for="modal-departure-date">Дата выезда:</label>
               <input class="input-text modal-date-input" name="departure-date" id="modal-departure-date" type="text"
                 placeholder="Укажите дату" value="1 сентября 2023" required>
+              </div>
               <p class="modal-massage">На эти даты есть свободные номера. Пока есть.</p>
-            </div>
           </div>
           <div class="modal-clients-container">
             <div class="clients-number">
@@ -226,7 +228,7 @@
                 <input class="clients-input" id="children-number" type="number" name="children-number" value="2">
                 <button class="clients-button more-clients-button" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
-                  <span class="modal-number-icon modal-more-icon"></span>
+                  <span class="modal-number-icon modal-more-icon focus"></span>
                 </button>
               </div>
             </div>

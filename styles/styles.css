@@ -61,6 +61,26 @@ img {
   border: none;
 }
 
+button[disabled],
+button[disabled]:hover,
+button[disabled]:active,
+button[disabled]:focus {
+  color: #fff;
+  background-color: #E5E5E5;
+}
+
+a[disabled] {
+  color: #FFF;
+  background-color: #E5E5E5;
+}
+
+a[disabled]:focus,
+a[disabled]:hover,
+a[disabled]:active {
+  color: #FFF;
+  background-color: #E5E5E5;
+  opacity: 100%;
+}
 
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
@@ -125,7 +145,7 @@ img {
 }
 
 .navigation-link:hover {
-  opacity: 70%;
+  opacity: 0.6;
 }
 
 .link-search {
@@ -168,7 +188,7 @@ img {
   margin-left: 20px;
   display: inline-block;
   color: #FFFFFF;
-  width: 165px;
+  width: 160px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -178,6 +198,17 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border-color: #756157;
+}
+
+.button-action:hover,
+.button-action:focus {
+  opacity: 100%;
+  background-color: #615048;
+}
+
+.button-action:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #756157;
 }
 
 
@@ -190,14 +221,6 @@ img {
   text-underline-position: under;
 }
 
-.button:hover {
-  opacity: 75%;
-  cursor: pointer;
-}
-
-.button:active {
-  color: rgba(255, 255, 255, 0.30);
-}
 
 /* Скрытие элементов */
 
@@ -226,6 +249,7 @@ img {
   background-position: cover;
   text-align: center;
   position: relative;
+  margin-bottom: 69px;
 }
 
 .hero::before {
@@ -247,18 +271,21 @@ img {
 
 /* блок с advantages */
 
+
 .advantages-title {
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   width: 640px;
   text-align: center;
-
+  margin-bottom: 25px;
 }
 
 
 .advantages-subtitle {
+  margin: 0;
   min-width: 651px;
   font-size: 22px;
   font-weight: 400;
@@ -270,7 +297,7 @@ img {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 64px 0;
+  margin-bottom: 89px;
 }
 
 .advantages-list {
@@ -297,7 +324,10 @@ img {
   flex-direction: column;
   justify-content: space-between;
   padding: 103px 85px;
+}
 
+.advantages-item--center {
+  padding: 112px 85px;
 }
 
 .advantages-item-title {
@@ -347,6 +377,10 @@ img {
   background-color: #83B3D333;
 }
 
+.advantages-img {
+  object-fit: cover;
+}
+
 /* блок с services */
 .wrapper-services-title {
   display: flex;
@@ -356,7 +390,7 @@ img {
 
 
 .services-title {
-  padding-top: 64px;
+  padding-top: 62px;
   padding-bottom: 20px;
   margin: 0;
   width: 505px;
@@ -416,16 +450,15 @@ img {
 
 .services-list-title {
   padding-top: 102px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   margin: 0;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 36px;
   text-transform: uppercase;
   color: black;
 }
 
 .services-list-subtext {
-  width: 230px;
   margin: 0;
   font-size: 18px;
   line-height: 21px;
@@ -454,8 +487,7 @@ img {
   line-height: 26px;
 }
 
-.search .button {
-  font-family: "Pt Sans", sans-serif;
+.button-search {
   display: inline-block;
   font-weight: 700;
   width: 376px;
@@ -467,6 +499,17 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: #615048;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #756157;
 }
 
 /* блок с subscribe */
@@ -489,7 +532,7 @@ img {
 
 .subscribe-title {
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -498,7 +541,7 @@ img {
 .subscribe-text {
   width: 467px;
   margin: 0;
-  padding-bottom: 54px;
+  margin-bottom: 56px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -514,7 +557,7 @@ img {
 .subscribe-form input {
   font-family: "Pt Sans", sans-serif;
   width: 452px;
-  padding: 12px 20px;
+  padding: 13px 20px;
   border: 0;
   border-radius: 4px 0 0 4px;
   font-size: 18px;
@@ -525,8 +568,7 @@ img {
 
 
 
-.subscribe-form button {
-  font-family: "Pt Sans", sans-serif;
+.button-subscribe {
   width: 232px;
   font-size: 20px;
   font-style: normal;
@@ -536,21 +578,38 @@ img {
   background-color: #82B3D3;
   color: #FFF;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #82B3D3;
 }
 
 .input-catalog-subcribe {
   background-color: #F2F2F2;
 }
 
+.subscribe-catalog {
+  padding: 156px 258px 104px 258px;
+}
+
 /* основной футер */
 
 .main-footer {
   min-height: 120px;
-  padding: 40px 70px 30px;
+  padding: 44px 70px 30px;
 }
 
-address a {
-  display: flex;
+.phone {
+  display: block;
+  margin-top: 2px;
+  margin-right: 14px;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -560,16 +619,16 @@ address a {
   color: inherit;
 }
 
-address a:hover {
+.phone:hover {
   color: #756157;
 }
 
 
-address a:focus {
+.phone:focus {
   color: #756157;
 }
 
-address a:active {
+.phone:active {
   color: rgba(117, 97, 87, 0.30);
 }
 
@@ -602,7 +661,7 @@ address a:active {
   width: 47px;
   height: 40px;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 12px;
 }
 
 .social-link svg {
@@ -621,6 +680,11 @@ address a:active {
 .wrapper-phone {
   width: 331px;
   align-items: center;
+}
+
+.html-academy-link {
+  display: block;
+  margin-top: 3px;
 }
 
 .html-academy-link:hover path,
@@ -642,7 +706,7 @@ address a:active {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  margin-bottom: 56px;
+  margin-bottom: 32px;
 }
 
 .main-catalog-title {
@@ -693,7 +757,7 @@ address a:active {
   position: absolute;
   width: 8px;
   height: 11px;
-  right: -20px;
+  right: -18px;
   bottom: 5px;
   background-image: url(../images/icon/breadcrumbs-arrow.svg);
   background-repeat: no-repeat;
@@ -714,7 +778,7 @@ address a:active {
 }
 
 .control:focus-within {
-  outline: 2px solid #000;
+  outline: 2px solid #68A2CA;
   border-radius: 4px;
 }
 
@@ -722,13 +786,13 @@ address a:active {
   border: none;
   padding: 0;
   margin: 0;
-  margin-right: 70px;
+  margin-right: 67px;
   display: flex;
   flex-direction: column;
 }
 
 .catalog-form-group:nth-child(2) {
-  margin-right: 139px;
+  margin-right: 141px;
 }
 
 .catalog-form-group:last-child {
@@ -750,7 +814,8 @@ address a:active {
 }
 
 .catalog-form-list-item {
-  padding-bottom: 16px;
+  width: 150px;
+  padding-bottom: 18px;
   list-style: none;
 }
 
@@ -766,6 +831,8 @@ address a:active {
   position: absolute;
   height: 4px;
   background-color: #fff;
+  left: 11px;
+  width: 207px;
 }
 
 .range-scale {
@@ -797,18 +864,20 @@ address a:active {
 }
 
 .toggle-min {
-  top: -8px;
-  left: -10px;
+  top: -9px;
+  left: -9px;
 }
 
 .toggle-max {
-  top: -8px;
-  right: -10px;
+  top: -10px;
+  right: -8px;
 }
 
 
 
 .control {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-left: 36px;
   cursor: pointer;
@@ -823,7 +892,7 @@ address a:active {
 
 .control-mark {
   position: absolute;
-  top: 3px;
+  top: 0;
   left: 0;
   width: 20px;
   height: 20px;
@@ -883,7 +952,7 @@ address a:active {
 
 .wrapper-price-inputs {
   display: flex;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
   position: relative;
 }
 
@@ -899,8 +968,17 @@ address a:active {
   border: 0;
   border-radius: 4px 0 0 4px;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 
+.input-price::-webkit-outer-spin-button,
+.input-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+
+}
 
 .input-price--right {
   border-radius: 0 4px 4px 0;
@@ -920,7 +998,7 @@ address a:active {
 
 
 .input-placeholder--before {
-  right: 160px;
+  right: 162px;
 }
 
 .input-placeholder--afer {
@@ -943,20 +1021,18 @@ address a:active {
 }
 
 
-.input-price::-webkit-outer-spin-button,
-.input-price::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
+
 
 /* Кнопки каталога */
 
 .form-buttons {
-  font: "Pt Sans" sans-serif;
   display: flex;
   width: 191px;
-  padding-top: 56px;
   flex-direction: column;
-  justify-content: end;
+}
+
+.wrapper-buttons {
+  margin-top: 56px;
 }
 
 .form-buttons button {
@@ -968,10 +1044,11 @@ address a:active {
 }
 
 .button-catalog-submit {
-  font: "Pt Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   background-color: #82b3d2;
@@ -983,6 +1060,8 @@ address a:active {
 
 .button-catalog-reset {
   font-family: "Pt Sans", sans-serif;
+  font-size: 16px;
+  width: 192px;
   padding: 8px 50px;
   background-color: inherit;
   font-weight: 700;
@@ -991,17 +1070,28 @@ address a:active {
   color: #ffffff;
   border: none;
   border-radius: 4px;
-
   cursor: pointer;
 }
 
-.button-catalog-reset:hover,
-.button-catalog-submit:hover {
-  color: rgba(255, 255, 255, 0.30);
+
+.button-catalog-submit:focus {
+  outline: 0 solid #68A2CA;
 }
 
-.button-catalog-reset:focus,
+.button-catalog-submit:hover {
+  background-color: #68A2CA;
+}
+
 .button-catalog-submit:focus {
+  background-color: #68A2CA;
+}
+
+.button-catalog-reset:hover {
+  opacity: 0.6000000238418579;
+}
+
+.button-catalog-reset:focus {
+  border-radius: 4px;
   outline: 3px solid #83B3D3;
 }
 
@@ -1021,8 +1111,8 @@ address a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 40px;
-  margin: 0;
+
+  margin-bottom: 22px;
 }
 
 .catalog-cards-top {
@@ -1036,9 +1126,9 @@ address a:active {
 
 .select-control {
   font-family: "Pt Sans", sans-serif;
-  appearance: none;
   width: 292px;
   padding: 14px 20px;
+  background-color: #fff;
   background-image: url("../images/icon/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
@@ -1049,13 +1139,24 @@ address a:active {
   font-weight: 400;
   line-height: 21px;
   cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
 }
+
 
 .select-control:focus,
 .select-control:hover {
-  outline: 2px solid #68A2CA;
+  border: 2px solid #68A2CA;
   border-radius: 4px;
+}
 
+.select-control:focus {
+  outline: 0 solid #68A2CA;
+  border-radius: 4px;
+}
+
+.select-control[disabled] {
+  border: 2px solid rgba(0, 0, 0, 0.30);
 }
 
 .controller-list {
@@ -1071,29 +1172,25 @@ address a:active {
   justify-content: center;
   width: 48px;
   height: 48px;
+  border-radius: 4px;
+  outline: 2px solid #E5E5E5;
 }
 
 .card-toggle:hover {
-  border-radius: 4px;
   outline: 2px solid #000;
 }
 
-
-
 .card-toggle:focus {
-  outline: 2px solid #68A2CA;
-  border-radius: 4px;
+  outline-color: #68A2CA;
 }
 
 .card-toggle:active {
-  border-radius: 4px;
-  outline: 2px solid #000;
+  outline-color: #000;
 }
 
 
 .controller-list-item {
   border-radius: 4px;
-  border: 2px solid #E5E5E5;
   margin-right: 8px;
 }
 
@@ -1102,7 +1199,7 @@ address a:active {
 }
 
 .controller-list-item--current {
-  border-color: #000;
+  outline-color: #000;
 }
 
 /* Карточки */
@@ -1111,9 +1208,10 @@ address a:active {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
+  row-gap: 16px;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 
@@ -1126,6 +1224,14 @@ address a:active {
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
+}
+
+.catalog-wrapper-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin-top: auto;
+  row-gap: 16px;
+  column-gap: 20px;
 }
 
 .catalog-cards-img {
@@ -1161,6 +1267,19 @@ address a:active {
   border-radius: 4px;
 }
 
+.catalog-button-more:hover {
+  background-color: #615048;
+}
+
+.catalog-button-more:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.catalog-button-more:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
 .catalog-button-favorites {
   font-family: "PT Sans", sans-serif;
   display: inline-block;
@@ -1177,8 +1296,35 @@ address a:active {
   border-radius: 4px;
 }
 
+
+.catalog-button-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.catalog-button-favorites:focus {
+  outline: none;
+  background-color: #68A2CA;
+}
+
+.catalog-button-favorites:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
 .catalog-button-favorites--selected {
   background-color: #7DB54F;
+}
+
+.catalog-button-favorites--selected:hover {
+  background-color: #6C9E42;
+}
+
+.catalog-button-favorites--selected:focus {
+  outline: none;
+  background-color: #6C9E42;
+}
+
+.catalog-button-favorites--selected:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .cards-rating {
@@ -1245,37 +1391,51 @@ address a:active {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+  border-radius: 4px;
 }
 
-.pagination-item:hover,
-.pagination-item:focus {
-
-  outline: 1px solid #82B3D3;
+.pagination-link:hover {
   background-color: #68A2CA;
+
+}
+
+.pagination-link:focus {
+  outline: none;
+  background-color: #68A2CA;
+
 }
 
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.pagination-item:first-child:hover {
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+
   background-color: #F2F2F2;
-  outline: none;
+  color: #000000;
+  cursor: pointer;
 }
 
-.pagination-current .pagination-link,
-.pagination-link .pagination-link--more {
+.bullets {
+  font-family: "PT Sans", sans-serif;
+  padding: 16px 16px;
+  font-size: 22px;
+  line-height: 26px;
+  display: block;
+  width: 60px;
+  height: 60px;
   color: #000;
+  border-radius: 4px;
 }
 
-.pagination-current {
-  cursor: default;
-}
+
 
 /* модалка*/
 
 .modal-container {
-
   position: fixed;
   display: flex;
   top: 0;
@@ -1290,7 +1450,7 @@ address a:active {
   position: relative;
   margin: auto;
   width: 717px;
-  padding: 65px 70px;
+  padding: 75px 70px 77px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -1302,8 +1462,8 @@ address a:active {
 
 .modal-close {
   position: absolute;
-  top: 64px;
-  right: 54px;
+  top: 71px;
+  right: 51px;
   width: 52px;
   height: 52px;
   border: none;
@@ -1312,25 +1472,12 @@ address a:active {
   cursor: pointer;
 }
 
-.modal-close-icon::before,
-.modal-close-icon::after {
+.modal-close-cross {
   position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 18px;
-  height: 2px;
-  background-color: #000000;
+  top: 20px;
+  left: 18px;
 }
 
-.modal-close-icon::before {
-  transform: rotate(45deg);
-}
-
-.modal-close-icon::after {
-  transform: rotate(-45deg);
-}
 
 .modal-close:hover {
   background-color: #e6e6e6;
@@ -1338,17 +1485,21 @@ address a:active {
 
 
 .modal-close:active {
-  opacity: 0.3;
+  background-color: #E6E6E6;
 }
 
 .modal-close:focus {
   outline: 3px solid #83B3D3;
 }
 
+.modal-close:active {
+  outline: none;
+  opacity: 0.30;
+}
+
 .modal-search-title {
   margin: 0;
-  padding-right: 60px;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1356,14 +1507,15 @@ address a:active {
   color: #000000;
 }
 
-.modal-date-container {
-  display: grid;
-  grid-template-columns: 119px 440px;
-  align-items: baseline;
-  column-gap: 18px;
+
+.modal-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-label {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1376,21 +1528,32 @@ address a:active {
   width: 100%;
   padding: 12px 60px 12px 20px;
   font-weight: 700;
-  background-image: url("../images/icon/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center right 22px;
   -webkit-appearance: none;
   appearance: none;
 }
 
+.modal-date-input {
+  background-image: url("../images/icon/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center right 22px;
+  background-color: #3F5E72;
+}
+
 
 .modal-massage {
+  display: inline-block;
   margin: 0;
-  margin-bottom: 19px;
+  margin-left: 137px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 21px;
   padding: 4px 20px;
   color: #333333;
+  text-align: center;
+}
+
+.modal-massage:nth-child(2) {
+  margin-bottom: 22px;
 }
 
 .modal-massage-error {
@@ -1399,13 +1562,16 @@ address a:active {
 
 .modal-clients-container {
   display: flex;
+
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .clients-number {
   display: flex;
   width: 244px;
+  align-items: center
 }
 
 .clients-number:first-child {
@@ -1417,11 +1583,16 @@ address a:active {
   width: 137px;
   align-items: center;
   position: relative;
+  margin-top: -5px;
 }
+
+
+
+/* Tooltip */
 
 .tooltip {
   position: relative;
-  margin-left: 10px;
+  margin-left: 13px;
   margin-right: 10px;
 }
 
@@ -1478,8 +1649,10 @@ address a:active {
 
 .clients-number-wrapper {
   display: flex;
+  justify-content: space-between;
   border-radius: 4px;
   background-color: #f2f2f2;
+  margin-top: -1px;
 }
 
 .modal-less-icon {
@@ -1498,6 +1671,8 @@ address a:active {
   background-color: rgba(117, 97, 87);
   opacity: 0.3;
 }
+
+
 
 .modal-more-icon::after {
   position: absolute;
@@ -1519,6 +1694,7 @@ address a:active {
   width: 35px;
   height: 48px;
   border: none;
+  cursor: pointer;
 }
 
 .clients-button:hover .modal-number-icon {
@@ -1526,16 +1702,22 @@ address a:active {
   opacity: 1;
 }
 
+
 .clients-button:focus .modal-number-icon {
   background-color: #000000;
   opacity: 1;
 }
 
+.clients-button:focus {
+  border-radius: 4px;
+  outline: 3px solid #82B3D3;
+}
 
 .clients-button:active .modal-number-icon {
   background-color: #000000;
   opacity: 0.2;
 }
+
 
 .less-clients-button {
   padding: 23px 13px;
@@ -1543,7 +1725,7 @@ address a:active {
 
 .clients-input {
   font-family: "Pt Sans", sans-serif;
-  width: 40px;
+  width: 38px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -1560,7 +1742,8 @@ address a:active {
 }
 
 .input-text {
-  padding: 14px 20px;
+  width: 440px;
+  padding: 11px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1575,24 +1758,28 @@ address a:active {
   font: "PT Sans", sans-serif;
   color: #ffffff;
   width: 100%;
-  margin-top: 48px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 18px 77px;
   border: none;
   background-color: #82b3d3;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   border-radius: 10px;
   text-transform: uppercase;
   border-color: #fff;
   cursor: pointer;
 }
 
-.modal-button:focus {
+.modal-button:hover {
   background-color: #68A2CA;
 }
 
+.modal-button:focus {
+  outline: none;
+  background-color: #68A2CA;
+}
 
 .modal-button:active {
+  color: rgba(255, 255, 255, 0.30);
   background-color: #68A2CA;
 }
