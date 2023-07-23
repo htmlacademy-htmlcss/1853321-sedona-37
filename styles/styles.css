@@ -1450,7 +1450,7 @@ a[disabled]:active {
   position: relative;
   margin: auto;
   width: 717px;
-  padding: 65px 70px;
+  padding: 75px 70px 77px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -1462,8 +1462,8 @@ a[disabled]:active {
 
 .modal-close {
   position: absolute;
-  top: 64px;
-  right: 54px;
+  top: 71px;
+  right: 51px;
   width: 52px;
   height: 52px;
   border: none;
@@ -1472,25 +1472,12 @@ a[disabled]:active {
   cursor: pointer;
 }
 
-.modal-close-icon::before,
-.modal-close-icon::after {
+.modal-close-cross {
   position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 18px;
-  height: 2px;
-  background-color: #000000;
+  top: 20px;
+  left: 18px;
 }
 
-.modal-close-icon::before {
-  transform: rotate(45deg);
-}
-
-.modal-close-icon::after {
-  transform: rotate(-45deg);
-}
 
 .modal-close:hover {
   background-color: #e6e6e6;
@@ -1498,17 +1485,21 @@ a[disabled]:active {
 
 
 .modal-close:active {
-  opacity: 0.3;
+  background-color: #E6E6E6;
 }
 
 .modal-close:focus {
   outline: 3px solid #83B3D3;
 }
 
+.modal-close:active {
+  outline: none;
+  opacity: 0.30;
+}
+
 .modal-search-title {
   margin: 0;
-  padding-right: 60px;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1516,14 +1507,15 @@ a[disabled]:active {
   color: #000000;
 }
 
-.modal-date-container {
-  display: grid;
-  grid-template-columns: 119px 440px;
-  align-items: baseline;
-  column-gap: 19px;
+
+.modal-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-label {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1536,21 +1528,32 @@ a[disabled]:active {
   width: 100%;
   padding: 12px 60px 12px 20px;
   font-weight: 700;
-  background-image: url("../images/icon/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center right 22px;
   -webkit-appearance: none;
   appearance: none;
 }
 
+.modal-date-input {
+  background-image: url("../images/icon/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center right 22px;
+  background-color: #3F5E72;
+}
+
 
 .modal-massage {
+  display: inline-block;
   margin: 0;
-  margin-bottom: 23px;
+  margin-left: 137px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 21px;
   padding: 4px 20px;
   color: #333333;
+  text-align: center;
+}
+
+.modal-massage:nth-child(2) {
+  margin-bottom: 22px;
 }
 
 .modal-massage-error {
@@ -1559,6 +1562,7 @@ a[disabled]:active {
 
 .modal-clients-container {
   display: flex;
+
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 48px;
@@ -1567,6 +1571,7 @@ a[disabled]:active {
 .clients-number {
   display: flex;
   width: 244px;
+  align-items: center
 }
 
 .clients-number:first-child {
@@ -1578,11 +1583,16 @@ a[disabled]:active {
   width: 137px;
   align-items: center;
   position: relative;
+  margin-top: -5px;
 }
+
+
+
+/* Tooltip */
 
 .tooltip {
   position: relative;
-  margin-left: 10px;
+  margin-left: 13px;
   margin-right: 10px;
 }
 
@@ -1639,8 +1649,10 @@ a[disabled]:active {
 
 .clients-number-wrapper {
   display: flex;
+  justify-content: space-between;
   border-radius: 4px;
   background-color: #f2f2f2;
+  margin-top: -1px;
 }
 
 .modal-less-icon {
@@ -1659,6 +1671,8 @@ a[disabled]:active {
   background-color: rgba(117, 97, 87);
   opacity: 0.3;
 }
+
+
 
 .modal-more-icon::after {
   position: absolute;
@@ -1680,6 +1694,7 @@ a[disabled]:active {
   width: 35px;
   height: 48px;
   border: none;
+  cursor: pointer;
 }
 
 .clients-button:hover .modal-number-icon {
@@ -1687,16 +1702,22 @@ a[disabled]:active {
   opacity: 1;
 }
 
+
 .clients-button:focus .modal-number-icon {
   background-color: #000000;
   opacity: 1;
 }
 
+.clients-button:focus {
+  border-radius: 4px;
+  outline: 3px solid #82B3D3;
+}
 
 .clients-button:active .modal-number-icon {
   background-color: #000000;
   opacity: 0.2;
 }
+
 
 .less-clients-button {
   padding: 23px 13px;
@@ -1704,7 +1725,7 @@ a[disabled]:active {
 
 .clients-input {
   font-family: "Pt Sans", sans-serif;
-  width: 40px;
+  width: 38px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -1721,7 +1742,8 @@ a[disabled]:active {
 }
 
 .input-text {
-  padding: 12px 20px;
+  width: 440px;
+  padding: 11px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1736,23 +1758,28 @@ a[disabled]:active {
   font: "PT Sans", sans-serif;
   color: #ffffff;
   width: 100%;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 18px 77px;
   border: none;
   background-color: #82b3d3;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   border-radius: 10px;
   text-transform: uppercase;
   border-color: #fff;
   cursor: pointer;
 }
 
-.modal-button:focus {
+.modal-button:hover {
   background-color: #68A2CA;
 }
 
+.modal-button:focus {
+  outline: none;
+  background-color: #68A2CA;
+}
 
 .modal-button:active {
+  color: rgba(255, 255, 255, 0.30);
   background-color: #68A2CA;
 }
